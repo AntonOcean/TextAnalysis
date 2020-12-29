@@ -10,6 +10,8 @@ from sklearn.pipeline import Pipeline
 from sklearn.svm import LinearSVC
 
 
+nltk.download('averaged_perceptron_tagger_ru')
+
 class Model:
     filename = 'sentiment_model.pkl'
 
@@ -70,5 +72,4 @@ def main():
 
 
 if __name__ == '__main__':
-    nltk.download('averaged_perceptron_tagger_ru')
     main()
