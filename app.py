@@ -1,3 +1,6 @@
+import os
+
+import nltk
 import streamlit as st
 
 from model import Model
@@ -33,4 +36,9 @@ def main():
 
 
 if __name__ == '__main__':
+    if os.getenv('APP', '') != 'heroku':
+        nltk.download('averaged_perceptron_tagger_ru')
+        nltk.download('wordnet')
+        nltk.download('punkt')
+        nltk.download('stopwords')
     main()
