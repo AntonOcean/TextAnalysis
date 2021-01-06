@@ -1,7 +1,7 @@
 # TextAnalysis
 made hw-3
 
-Запланирован деплой на https://share.streamlit.io/
+деплой на https://share.streamlit.io/antonocean/textanalysis/main/app.py
 
 Сейчас деплой тут https://sentiment-demo.herokuapp.com/
 
